@@ -1,0 +1,7 @@
+iptraf-ng usr/sbin/
+rvnamed-ng usr/sbin/
+logrotate.d/iptraf-ng etc/logrotate.d/
+Documentation/*.html usr/share/doc/iptraf-ng/Documentation/
+Documentation/*.png usr/share/doc/iptraf-ng/Documentation/
+Documentation/stylesheet-images usr/share/doc/iptraf-ng/Documentation/
+Documentation/*.rtf usr/share/doc/iptraf-ng/Documentation/

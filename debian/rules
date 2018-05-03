@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+%:
+	dh $@ --parallel
+override_dh_auto_install:
+	mkdir -p logrotate.d && cp -f iptraf-ng-logrotate.conf logrotate.d/iptraf-ng
+	dh_install

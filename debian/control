@@ -1,0 +1,38 @@
+Source: iptraf-ng
+Section: net
+Priority: optional
+Maintainer: Aron Xu <aron@debian.org>
+Uploaders: Frederic Peters <fpeters@debian.org>
+Build-Depends: debhelper (>= 9), autotools-dev, libncurses5-dev, libncursesw5-dev
+Standards-Version: 3.9.5
+Homepage: https://fedorahosted.org/iptraf-ng/
+Vcs-Git: git://anonscm.debian.org/collab-maint/iptraf-ng.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/iptraf-ng.git
+
+Package: iptraf-ng
+Architecture: linux-any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: iptraf
+Description: Next Generation Interactive Colorful IP LAN Monitor 
+ IPTraf-ng is an ncurses-based IP LAN monitor that generates various network
+ statistics including TCP info, UDP counts, ICMP and OSPF information, 
+ Ethernet load info, node stats, IP checksum errors, and others. 
+ .
+ IPTraf-ng is the next generation of IPTraf started as a fork of original
+ iptraf-3.0.0.
+
+Package: iptraf
+Architecture: all
+Depends: iptraf-ng
+Section: oldlibs
+Priority: extra
+Description: transitional package to iptraf-ng
+ IPTraf-ng is an ncurses-based IP LAN monitor that generates various network
+ statistics including TCP info, UDP counts, ICMP and OSPF information,
+ Ethernet load info, node stats, IP checksum errors, and others.
+ .
+ IPTraf-ng is the next generation of IPTraf started as a fork of original
+ iptraf-3.0.0.
+ .
+ This is a transitional dummy package to help iptraf users to upgrade to
+ iptraf-ng, you may remove it safely.
